@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html body{
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    padding: 1rem;
+    background-color: #EAEAEA;
+    box-shadow: -2px 3px 12px black;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav img{
+    width: 30%;
+}
+nav ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    align-items: center;
+}
+ul li a{
+    color: black;
+    text-decoration: none;
+    transition: 0.4s;
+}
+ul li a:hover{
+    font-size: 17px;
+}
+#download{
+    background: #D0FDB5;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #333030;
+    animation-name: dl;
+    animation-duration: 3s;
+    font-weight: bold;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dl {
+    0%{
+    }
+    50%{
+        box-shadow: -2px 5px 10px black;
+    }
+    100%{
+    }
+
+}
+.container{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    margin-top: 15rem;
+}
+.box{
+    display: flex;
+    background: #EAEAEA;
+    flex-direction: column;
+    animation-name: start;
+    height: 19rem;
+    width: 37%;
+    border-radius: 12px;
+    box-shadow: 0px 1px 23px 11px rgb(0 0 0 / 25%);
+    padding: 1rem;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.top{
+    background: #D9D9D9;
+    border-radius: 12px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem;
+}
+.top h3{
+    color: #5d5d5d;
+}
+.mid{
+    display: flex;
+}
+.one{
+    padding: 3rem;
+    margin-top: -5rem;
+}
+.two{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: -5rem;
+}
+#close{
+    cursor: pointer;
+}
+button{
+    border-radius: 7px;
+    border: none;
+    padding: 0.5rem;
+    font-size: 17px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#confirm{
+    background: #D0FDB5;
+    border-radius: 7px;
+    border: none;
+    padding: 0.5rem;
+    font-size: 17px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#cancel{
+    background: #FFC1C1;
+}
+.end{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+@keyframes start {
+    0%{
+        box-shadow: none;
+        transform: scale(1);
+    }
+    50%{
+        box-shadow: 0px 1px 23px 11px rgb(0 0 0 / 25%);
+        transform: scale(1.04);
+    }
+    100%{
+        box-shadow: none;
+        transform: scale(1);
+    }
+}
